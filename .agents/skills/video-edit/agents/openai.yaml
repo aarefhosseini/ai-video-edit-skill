@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Edit"
+  short_description: "Edit short videos with references, previews, and local exports."
+  default_prompt: "Use $video-edit to turn my footage and references into a polished short video. Ask about the destination and approval mode first."
