@@ -1,6 +1,6 @@
 # Release validation — 0.1.0 beta
 
-Checked on 2026-10-12. This report states executed checks separately from proposed ones.
+Local preparation checked on 2026-10-12; publication verified on 2026-10-13. This report states executed checks separately from proposed ones.
 
 ## Executed
 
@@ -17,10 +17,14 @@ An assembly timing issue discovered by the cut-list test was corrected by derivi
 
 ## Required before claiming stable broad support
 
-1. Run the configured GitHub Actions jobs on Windows, Linux and macOS after publication. Verify initial dependency preparation in clean environments.
+1. Keep the three-OS GitHub Actions pipeline passing as dependencies change. Initial clean dependency installation, doctor and 19 behavioral tests passed on all three OS jobs in [run #1](https://github.com/aarefhosseini/ai-video-edit-skill/actions/runs/38309825742).
 2. Run the installed skill end-to-end in both Codex and Claude Code. Evaluate actual behavior with the cases in evals/cases.json, including raw repeated speech takes, an approved master and missing evidence.
 3. Have a creator outside the development conversation provide files and complete a project without terminal chores. Record questions, revisions, final artifacts and blockers.
 4. Audibly review speech cuts, cleanup and speed changes on real creator footage; inspect retouch over motion and output captions at intended mobile size.
 5. Review a final output in the actual target mobile app/placement where available. Geometry assumptions alone are not a universal platform guarantee.
 
-The package is suitable for a public beta with these limits clearly stated. It has no executed Windows/Linux CI or independent creator trial yet. Publication and CI results are tracked on GitHub. No paid API call is part of the bundled media pipeline.
+The package is suitable for a public beta with these limits clearly stated. An independent creator trial and full live agent behavior evaluations remain pending. Publication and CI results are tracked on GitHub. No paid API call is part of the bundled media pipeline.
+
+## Publication verification
+
+The public repository was cloned without authentication. All 30 publication files matched the local source byte for byte, and the 19 tests passed again from the clone. The three-OS CI run passed with clean dependency installation. Node runtime deprecation notices from the initial workflow were addressed by updating the official checkout and setup-python actions.
