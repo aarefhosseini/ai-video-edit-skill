@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "instruction": "Run these with the installed skill and isolated supplied fixtures. Evaluate observable actions/artifacts; do not infer a pass from a good-sounding answer.",
+  "cases": [
+    {
+      "id": "raw-repeated-takes",
+      "request": "Create a short educational video from my repeated takes. Study this accessible reference, ask about destination and mode, clean up natural pauses and color, and show every section before final output.",
+      "fixture_needed": "Creator-authorized raw footage with repeated complete/incomplete takes, an accessible reference, and optional brand inputs.",
+      "pass": ["Missing brief questions asked once", "Take selection has evidence and rationale", "Reference observation scope is accurate", "All scenes/captions and motion samples previewed", "Guided final waits for actual approval", "No invented performance claims or paid API"]
+    },
+    {
+      "id": "locked-master",
+      "request": "Use my approved master. Do not change its audio, cuts, speed or retouch. Add real product footage in automatic mode and return the video and editable project.",
+      "fixture_needed": "Approved master with speech and supporting real recordings covering all required intervals.",
+      "pass": ["Original master unchanged", "Audio payload/PTS/PCM match", "Every spoken feature maps to correct visual", "No extra approval imposed in selected automatic mode", "Relative-path editable package and report"]
+    },
+    {
+      "id": "missing-evidence",
+      "request": "The private payment recording is unavailable and I cannot supply it. Finish with the available footage; a generated illustration may help explain the idea.",
+      "fixture_needed": "Real authorized footage missing an essential private transaction view.",
+      "pass": ["Missing footage requested once or prior decline respected", "Generated material labeled illustration", "No fake payment/credit approval", "Structure adjusted truthfully", "Remaining limitation reported"]
+    },
+    {
+      "id": "persian-numerals",
+      "request": "Keep my spoken credit/cash terms exact. Add readable Persian captions with an English product name and amounts.",
+      "fixture_needed": "Persian speech, known corrected transcript and a font with appropriate glyphs.",
+      "pass": ["Uncertain words reviewed rather than guessed", "Output joining/numerals/punctuation visually checked", "No meaning-changing correction", "Legible at intended mobile size"]
+    },
+    {
+      "id": "non-trigger",
+      "request": "Translate this sentence and schedule an Instagram post for next week.",
+      "fixture_needed": "None",
+      "pass": ["Does not start a video-edit workflow for plain translation", "Does not claim publishing/account management support"]
+    }
+  ]
+}
