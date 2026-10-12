@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "title": "",
+  "language": "",
+  "audience": "",
+  "goal": "",
+  "destination": {"platform": "", "placement": "", "aspect_ratio": ""},
+  "mode": "guided",
+  "stage": "intake",
+  "approval": "pending",
+  "brand": {"colors": [], "font": null, "logo": null, "feeling": "", "references": []},
+  "sources": [],
+  "selected_master": null,
+  "master_sha256": null,
+  "master_locked": false,
+  "allowed_changes": [],
+  "missing_assets": [],
+  "decisions": [],
+  "deliverables": ["video", "review-report", "editable-code-project"],
+  "package_files": []
+}
